@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/FVG_fiumi_2.js"></script><script src="layers/VE_fiumi_3.js"></script><script src="layers/VE_fiumi_4.js"></script><script src="layers/TV_fiumi_5.js"></script><script src="layers/SitiSHORESEIA_6.js"></script><script src="layers/SitiSHORESEIA3_7.js"></script><script src="layers/SitiSHORESEIA2_8.js"></script><script src="layers/SitiSHORESEIA1_9.js"></script><script src="layers/SitiSHORESFBA_10.js"></script><script src="layers/SitiSHORESFBA3_11.js"></script><script src="layers/SitiSHORESFBA2_12.js"></script><script src="layers/SitiSHORESFBA1_13.js"></script><script src="layers/SitiSHORESRBA_14.js"></script><script src="layers/SitiSHORESRBA2_15.js"></script><script src="layers/SitiSHORESRBA1_16.js"></script><script src="layers/SitiSHORESMBA_17.js"></script><script src="layers/SitiSHORESMBA3_18.js"></script><script src="layers/SitiSHORESMBA2_19.js"></script><script src="layers/SitiSHORESMBA1_20.js"></script><script src="layers/SitiSHORESEBA2_21.js"></script><script src="layers/SitiSHORES_22.js"></script><script src="layers/Area_ricerca_23.js"></script>
+        <script src="styles/FVG_fiumi_2_style.js"></script><script src="styles/VE_fiumi_3_style.js"></script><script src="styles/VE_fiumi_4_style.js"></script><script src="styles/TV_fiumi_5_style.js"></script><script src="styles/SitiSHORESEIA_6_style.js"></script><script src="styles/SitiSHORESEIA3_7_style.js"></script><script src="styles/SitiSHORESEIA2_8_style.js"></script><script src="styles/SitiSHORESEIA1_9_style.js"></script><script src="styles/SitiSHORESFBA_10_style.js"></script><script src="styles/SitiSHORESFBA3_11_style.js"></script><script src="styles/SitiSHORESFBA2_12_style.js"></script><script src="styles/SitiSHORESFBA1_13_style.js"></script><script src="styles/SitiSHORESRBA_14_style.js"></script><script src="styles/SitiSHORESRBA2_15_style.js"></script><script src="styles/SitiSHORESRBA1_16_style.js"></script><script src="styles/SitiSHORESMBA_17_style.js"></script><script src="styles/SitiSHORESMBA3_18_style.js"></script><script src="styles/SitiSHORESMBA2_19_style.js"></script><script src="styles/SitiSHORESMBA1_20_style.js"></script><script src="styles/SitiSHORESEBA2_21_style.js"></script><script src="styles/SitiSHORES_22_style.js"></script><script src="styles/Area_ricerca_23_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>

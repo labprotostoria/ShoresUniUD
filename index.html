@@ -53,6 +53,56 @@
                 <div id="popup-content"></div>
             </div>
         </div>
+        <!-- LOGHI IN BASSO A SINISTRA CON DIMENSIONI DISTINTE -->
+    <div id="logos">
+        <img src="PRIN-post-1.png" alt="PRIN 2022 PNRR" class="logo-prin">
+        <img src="Immagine1.png" alt="Finanziato dall'Unione Europea" class="logo-banner">
+        <script src="./resources/qgis2web.js"></script>
+
+  /* --- STILE LOGHI IN BASSO A SINISTRA --- */
+        #logos {
+            position: absolute;
+            bottom: 10px; 
+            left: 10px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start;
+        }
+
+        /* Logo PRIN */
+        #logos .logo-prin {
+            max-width: 80px;  /* più grande e squadrato */
+            height: auto;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Banner finanziatori */
+        #logos .logo-banner {
+            max-width: 600px; /* più largo e basso */
+            height: auto;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Effetto hover */
+        #logos img:hover {
+            opacity: 1;
+        }
+
+        /* Per schermi più piccoli */
+        @media (max-width: 600px) {
+            #logos .logo-prin {
+                max-width: 120px;
+            }
+            #logos .logo-banner {
+                max-width: 200px;
+            }
+        }
+    </style>
+
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
@@ -66,3 +116,4 @@
         <script src="./resources/qgis2web.js"></script>
     </body>
 </html>
+
